@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 149vh;
+    }
+    .header{
+        background-color: rgba(21, 248, 168, 0.825);
+        height: 2em;
+        padding: 1em;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        font-style: italic;
+    }
+    nav{
+        background-color: rgb(163, 209, 233);
+        overflow: hidden;
+    }
+    nav a{
+        text-decoration: none;
+        text-align: center;
+        font-size: x-large;
+        font-style: italic;
+        padding: 15px 15px;
+        border-style: solid rgb(20, 25, 25);
+        float:left;
+        display: block;
+    }
+    nav a:hover{
+        background-color: rgb(139, 89, 127);
+    }
+    @media screen and (max-width:600px){
+        nav a{
+            float: none;
+            width: 100%;
+        }
+    } 
+    .search-container{
+        float: right;
+    }
+    .container input[type=text]{
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+    }
+    .search-container button{
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #3dce92;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+    .search-container button:hover{
+        background: #d93c6e;
+    }
+    @media screen and (max-width: 600px){
+        .container .search-container{
+            float:none
+        }
+        .container input[type=text], .container .search-container button{
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+        }
+       .container input[type=text]{
+        border: 1px solid #ccc;
+        }
+    }
+    body{
+        background-image: url("pic1.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1400px;
+    }
+    .submit {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .submit .btn{
+        color: #121312;
+        padding: 12px 25px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: #e28e8a;
+        text-align: center;
+    }
+    p{
+        font-style: italic;
+        font-size: x-large;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="header">Explore New Winter Collection !! 
+        </div>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact Us</a>
+            <a href="">Women</a>
+            <a href="">Men</a>
+            <a href="">New Collection</a>
+            <a href="">Login</a>
+        <div class="search-container">
+            <form action="">
+                <input type="text" placeholder="Search..."  name="search">
+                <button type="submit"><i class="search fa-search"></i></button>
+            </form>
+        </div>
+        </nav>
+    </div>
+    <div class="body"></div>
+    <p>Winter Is Not A Season It's A Celebration. Explore Winter Fashion.<br>
+    <br>
+     Find The New Winter Collection Here!!</p><br><br>
+</section>
+<footer class="submit"align="center">
+    <a href="" class="btn">Shop Now</a>
+</footer>
+</body>
+</html>
